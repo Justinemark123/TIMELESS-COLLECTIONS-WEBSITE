@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-position-y: middle;
+    background-position-x: center;
+    background-size: 1385px;
+    padding: top 80px;
+    scrollbar-width: auto;
+    scroll-behavior: smooth;
+}
+@view-transition {
+  navigation: auto; /* Enables smooth transitions between page loads */
+}
+
+/* Customizing the fade speed (Optional) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 1s;
+}
+/* Styling for Chrome/Edge/Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Dark background to match your site */
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00000000; /* Red handle to match your branding */
+  border-radius: 5px;
+}
+.menu {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;   
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.menu ul {
+  display: flex;  
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  align-items: center;
+}
+
+.slide-menu {
+    float: left;
+    width: 400px;
+    height: 70px;
+    align-items: center;
+    position: center;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 80px;
+    font-size: 16px;
+    position: center; 
+    transition: transform 0.4s ease; 
+}
+
+ul li:hover {
+    transform: scale(1.1); 
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+ul li a:hover {
+    color: #ff0000;
+    text-shadow: 1px 1px 5px #ff0000; 
+}
+.hero-banner {
+  
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+  .background {
+    background-image: url('./homebg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+  }
+.background2{
+  background-image: url('./ferraribg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.background3{
+  background-image: url('./porschebg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.background4{
+  background-image: url('./fordbg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.background5{
+  background-image: url('./mclarenbg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.background6{
+  background-image: url('./lambobg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.background7{
+  background-image: url('./aboutbg.png');
+  background-repeat: no-repeat; 
+    background-size: 100%;
+}
+
+.dropdown-content {
+  max-height: 200px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  display: none !important;
+  
+  scrollbar-width: thin; 
+  scrollbar-color: red rgba(0, 0, 0, 0.625);
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: #000000b9;
+  height: 100vh;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block !important; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000b1;
+  min-width: 220px;
+  padding: 0;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.dropdown-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  gap: 15px;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.dropdown-content a img {
+  width: 30px;
+  height: auto;
+}
+
+.dropdown-content a:hover {
+  background-color:darkgray; 
+  transition: 0.3s;       
+}
+.link-ford:hover {
+  color: #002aff !important; 
+  text-shadow: 0 0 10px #00ecff;
+  background-color: #111 !important; 
+}
+.link-porsche:hover {
+  color: #fcfcfc !important; 
+  text-shadow: 0 0 10px #fcfcfc;
+  background-color: #111 !important; 
+}
+.link-mclaren:hover {
+  color: #ff6600 !important; 
+  text-shadow: 0 0 10px #ff6600;
+  background-color: #111 !important; 
+}
+.link-lamborghini:hover {
+  color: #d4ff00 !important; 
+  text-shadow: 0 0 10px #d4ff00;
+  background-color: #111 !important; 
+}
+.centered-logo {
+  margin-right: 50px;
+  height: 60px;
+}
